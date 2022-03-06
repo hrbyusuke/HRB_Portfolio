@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <title>HRB</title>
@@ -28,7 +29,7 @@
         }
 
         nav ul li a {
-            font-size:large;
+            font-size: large;
             position: fixed;
             text-decoration: none;
             color: white;
@@ -41,11 +42,12 @@
         .mainpic {
             width: 100%;
         }
-        
-        #profile{
-            color:white;
-            text-align:center;
+
+        #profile {
+            color: white;
+            text-align: center;
         }
+
         .profile {
             color: white;
             padding: 10px;
@@ -70,11 +72,12 @@
             margin: 0 auto;
             padding-left: 40px;
         }
-        
-        #hobby{
-            color:white;
-            text-align:center;
+
+        #hobby {
+            color: white;
+            text-align: center;
         }
+
         .hobby {
             display: flex;
             flex-wrap: wrap;
@@ -92,15 +95,35 @@
             padding-right: 20px;
             padding-left: 20px;
         }
-        footer{
-            color:white;
-            text-align:center;
+
+        #works {
+            color: white;
+            text-align: center;
         }
-        @media (max-width: 767px){
+
+        .works {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .yubin {
+            color: white;
+            text-align: center;
+            width: 33%;
+            border: 3px solid white;
+        }
+
+        footer {
+            color: white;
+            text-align: center;
+        }
+
+        @media (max-width: 767px) {
             .item {
-                width:100%;
-                text-align:center;
-                padding-bottom:40px;
+                width: 100%;
+                text-align: center;
+                padding-bottom: 40px;
             }
         }
     </style>
@@ -108,7 +131,7 @@
 
 <body>
     <!--メニュー-->
-    <nav class="home">
+    <nav class="home" id="home">
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#profile">Profile</a></li>
@@ -130,12 +153,12 @@
             <h2>
                 <ul>
                     <li>1999年3月生まれ　愛知県小牧市出身</li>
-                    <li>自動車部品輸送用の緩衝材の設計開発、品質管理に従事</li>
-                    <li>趣味は筋力トレーニングで、好きなトレーニングはインクラインダンベルフライ</li>
+                    <li>自動車部品輸送用の緩衝材の設計開発、品質管理の経験あり</li>
+                    <li>趣味は筋力トレーニングで、好きなトレーニングはペクトラルフライ</li>
                     <li>飲んでるプロテインはゴールドスタンダードのダブルリッチチョコレート味</li>
                 </ul>
             </h2>
-            </div>
+        </div>
     </section>
 
     <!--趣味等の写真-->
@@ -155,8 +178,15 @@
         </div>
     </section>
     <!--制作物-->
-    
+    <h1 id="works">Works</h1>
+    <section class="works">
+        <div class="yubin">
+            <a href="https://horibe.naviiiva.work/search.html">
+                <img src="yubin.jpg" alt="郵便番号検索アプリ"></a>
+        </div>
+    </section>
     <!--連絡先、お問合せフォーム-->
+
     <!--fotter-->
     <footer>
         <p>&copy;2022 HRB a.k.a.yunibaikoka︎</p>
